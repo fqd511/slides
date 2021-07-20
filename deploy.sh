@@ -8,8 +8,9 @@ branch=$(git symbolic-ref --short HEAD)
 
 echo "Current branch: $branch"
 
-# 生成部署文件
-npm run build
+# 生成部署文件,注意路径单独注明
+#slidev build --base /slides/$branch/
+slidev build --base /slides/
 
 # 进入生成的文件夹
 cd dist
@@ -19,10 +20,13 @@ cd dist
 
 git init
 git add -A
-git commit -m 'deploy branch: $branch'
+git commit -m "deploy branch: $branch"
 
 # 如果发布到 https://<USERNAME>.github.io
 # git push -f https://github.com/<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 git push -f https://github.com/fqd511/slides.git master:gh-pages
+
+#remove .git folder(and all its content) in dist
+#rm -rf .git
