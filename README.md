@@ -1,11 +1,15 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# homepage
 
-To start the slide show:
+slides 的汇总入口
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+## todo
 
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+- [x] 验证 a 标签直接跳转
+- [ ] 入口页index
+- [ ] 自动部署脚本
+    - [ ] deploy加路径
+    - [ ] 移动到指定目录
+    - [ ] 更新根目录列表文件
+- [ ] 入口页升级
+    - [ ] favicon
+    - [ ] 预览：看下 slidev 文档的预览是怎么做的
