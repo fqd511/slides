@@ -23,6 +23,8 @@ slidev build --base /slides/$branch/
 rm -rf __temp__/$branch
 mkdir  __temp__/$branch
 
+# 复制 dist 中部署文件到 __temp__/$branch
+cp -R ./dist/ __temp__/$branch/
 
 # 如果是发布到自定义域名
 # echo 'www.digvan.com' > CNAME
