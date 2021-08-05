@@ -4,21 +4,23 @@
 */
 const fs = require('fs');
 
-// process.argv拿到命令行调用时的参数，第三个为自定义参数
+// process.argv拿到命令行调用时的参数，第三个起为自定义参数
 const link = process.argv[2];
+const desc = process.argv[3];
 
 try {
 	// read from file
 	const rawData = fs.readFileSync('db.json', 'utf-8')
-	linkArray = JSON.parse(rawData.toString())
+	let slidesArray = JSON.parse(rawData.toString())
 
-	// add new link if not included
-	if (!linkArray.includes(link)) {
-		linkArray.push(link);
+	// remove existed
+	if (slidesArray.some(slide=>slide.link===link)) {
+		slidesArray = slidesArray.filter(slide=>slide.link!==link)
 	}
+	slidesArray.push({link,desc});
 
 	// write to file
-	fs.writeFileSync('db.json', JSON.stringify(linkArray));
+	fs.writeFileSync('db.json', JSON.stringify(slidesArray));
 } catch (e) {
 	console.error(e);
 }
