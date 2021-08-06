@@ -26,18 +26,8 @@ mkdir  __temp__/$branch
 # 复制 dist 中部署文件到 __temp__/$branch
 cp -R ./dist/ __temp__/$branch/
 
-# 如果是发布到自定义域名
-# echo 'www.digvan.com' > CNAME
+# 切到 homepage 分支
+git checkout homepage
 
-# git init
-# git add -A
-# git commit -m "deploy branch: $branch"
-
-# 如果发布到 https://<USERNAME>.github.io
-# git push -f https://github.com/<USERNAME>/<USERNAME>.github.io.git master
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f https://github.com/fqd511/slides.git master:gh-pages
-
-# remove .git folder(and all its content) in dist
-# rm -rf .git
+# 在 homepage 分支部署
+npm run deploy -- $branch $1
