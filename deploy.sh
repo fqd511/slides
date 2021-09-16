@@ -20,8 +20,8 @@ slidev build --base /slides/$branch/
 #slidev build --base /slides/
 
 # refresh branch folder
-rm -rf __temp__/$branch
-mkdir  __temp__/$branch
+rm -rf __temp__
+mkdir  __temp__
 
 # 复制 dist 中部署文件到 __temp__/$branch
 cp -R ./dist/ __temp__/$branch/
@@ -30,4 +30,4 @@ cp -R ./dist/ __temp__/$branch/
 git checkout homepage
 
 # 在 homepage 分支部署
-npm run deploy -- $branch $1
+#npm run deploy -- $branch $1
