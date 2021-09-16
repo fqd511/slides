@@ -6,5 +6,6 @@
 # 3. 将 link 对应的部署文件(在__temp__/link下)移到 dist 的 sub 下（覆盖:先删掉原来的，再移入）
 # 4. 进入 dist 部署到 gh-pages
 
-console.log($1)
-console.log($2)
+echo "$1"
+echo "$2"
+echo "$3"
