@@ -6,7 +6,6 @@
 # 3.切换分支到 homepage
 # 4.执行 sh update $branch
 
-
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -17,7 +16,6 @@ echo "Current branch: $branch"
 
 # 生成部署文件,注意路径单独注明
 slidev build --base /slides/$branch/
-#slidev build --base /slides/
 
 # refresh branch folder
 rm -rf __temp__
@@ -30,4 +28,4 @@ cp -R ./dist/ __temp__/$branch/
 git checkout homepage
 
 # 在 homepage 分支部署
-npm run deploy -- $branch $1
+npm run deploy -- $branch "$1"
