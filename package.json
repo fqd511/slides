@@ -7,7 +7,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "@slidev/cli": "^0.22.5",
+    "@slidev/cli": "^0.23",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
