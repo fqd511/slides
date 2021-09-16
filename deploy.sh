@@ -30,4 +30,4 @@ cp -R ./dist/ __temp__/$branch/
 git checkout homepage
 
 # 在 homepage 分支部署
-#npm run deploy -- $branch $1
+npm run deploy -- $branch $1
