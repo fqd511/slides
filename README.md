@@ -19,5 +19,5 @@ Edit the [slides.md](./slides.md) to see the changes
 
 ## deployment
 
-when finish slide development,run `npm run deploy "Description of this slide"`. It will update the slide and 
+when finish slide development,run `npm run deploy -- "Description of this slide"`. It will update the slide and 
 description(using the cmd parameter) in homepage and deploy to GitHub page
