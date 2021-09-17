@@ -26,7 +26,8 @@ cp -R ./__temp__/$1 dist/$1
 # step 4
 cd dist
 git init
-git commit -a -m "deploy: update slide ($1:$2)"
+git add -A
+git commit -m "deploy: update slide ($1:$2)"
 git push -f https://github.com/fqd511/slides.git master:gh-pages
 
 echo "update slide ($1:$2)"
