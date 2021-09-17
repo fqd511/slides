@@ -13,7 +13,7 @@ set -e
 
 # step 1
 echo "update db.json : slide ($1:$2)"
-node update $1 $2
+node update "$1" "$2"
 
 
 
