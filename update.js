@@ -9,6 +9,7 @@ const link = process.argv[2];
 const desc = process.argv[3];
 
 try {
+	console.log('updating db.json');
 	// read from file
 	const rawData = fs.readFileSync('db.json', 'utf-8')
 	let slidesArray = JSON.parse(rawData.toString())
