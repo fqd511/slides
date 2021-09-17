@@ -19,7 +19,7 @@ slides 的汇总入口
 
 ```shell
 # 在根目录下运行，link_example 为链接举例
-node update link_example
+node update link_example link_description
 ```
 
 > 该命令行会将`link_example`写入`db.json`，页面加载时会运行`generator.js`读取`db.json`内容生成链接列表

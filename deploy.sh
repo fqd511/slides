@@ -15,6 +15,13 @@ set -e
 echo "update db.json : slide ($1:$2)"
 node update "$1" "$2"
 
+git commit -a -m "feat(homepage): update link ($1:$2)"
 
+# step 2
+npm install
+npm run build
+
+# step 3
+rm -rf
 
 echo "update slide ($1:$2)"
