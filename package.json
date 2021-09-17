@@ -6,7 +6,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "deploy": "sh deploy.sh",
-    "deploy-homepage": "sh deploy.sh"
+    "deploy-homepage": "sh deploy-homepage.sh"
   },
   "dependencies": {
     "vue": "^3.2.6"
