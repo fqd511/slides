@@ -19,7 +19,7 @@ highlighter: shiki
 # 转正述职
 
 <div class="p-20 m-0 p-0 leading-relaxed">
-樊启狄
+***
 <br/>
 2020-7-21
 </div>
