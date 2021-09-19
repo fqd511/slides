@@ -7,8 +7,8 @@ slides 的汇总入口
 - [x] 验证 a 标签直接跳转
 - [x] 入口页index
 - [x] 命令行更新 json 文件
-- [ ] 入口页简单做一下
-    - [ ] favicon
+- [x] 入口页简单做一下
+    - [x] favicon
     - [ ] 预览：看下 slidev 文档的预览是怎么做的
 
 ## How to use
